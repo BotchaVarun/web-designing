@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+   
+    display: block;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+}
+.start
+{
+    
+        background:url(/img/Mainpage.jpg);
+        background-repeat: no-repeat;
+        background-position: cover;
+        background-size: 100% 100%;
+        width:100%;
+        z-index: -1;
+        height:800px;
+        justify-content: center;
+        position: relative;
+    
+   
+}
+
+/* Adjusted CSS for the .info-bar */
+.info-bar {
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    height: 5rem;
+    transition: 0.6s ease;
+    
+}
+.info-bar.sticky
+{
+    z-index: 99;
+    background: rgb(101, 152, 152);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1.25);
+    
+}
+
+
+
+.logo {
+    font-size: 2em;
+    color: white;
+    user-select: none;
+    height: 100px;
+    margin-top:30px;
+}
+
+.navigation a, .navigation button {
+    font-size: 2.1em;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+    position: relative;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3%;
+    background: white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+.section {
+    align-items: center;
+    background: transparent;
+    border: 0px;
+    color: white;
+    justify-content: space-between;
+}
+
+.title {
+    height: 393px;
+    margin-left: 150px;
+    margin-top: 150px;
+}
+
+.contact-footer {
+    text-align: center;
+    margin-top: 807px;
+}
+
+.contact-footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.contact-footer a {
+    color: #ffc0e7;
+    text-decoration: none;
+}
+
+.contact-footer a:hover {
+    text-decoration: underline;
+}
+
+.contact {
+    background-color: #24119b;
+    color: #fbf8f8;
+    display: block;
+    width: 100%;
+    height: 300px;
+}
+
+.contact .detail {
+   
+    margin-left:300px;
+
+}
+.contact .p{
+    float:right;
+}
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Global styles */
+
+/* Gallery styles */
+.gallery {
+    background:url(/img/gallery.jpg);
+    width:100%;
+    margin-top:-20px;
+    height:800px;
+    padding: 30px;
+    justify-content: center;
+    position: relative;
+  
+
+}
+
+/* Wrapper styles for carousel */
+.wrapper {
+    display: flex;
+    max-width: 1000px;
+    margin-top: 200px;
+    margin-left: 100px;
+    position: absolute;
+}
+
+.wrapper i {
+    top: 50%;
+    height: 44px;
+    width: 44px;
+    color: #343F4F;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+}
+
+.wrapper i:active {
+    transform: translateY(-50%) scale(0.9);
+}
+
+.wrapper i:hover {
+    background: #f2f2f2;
+}
+
+.wrapper i:first-child {
+    left: -22px;
+    display: none;
+}
+
+.wrapper i:last-child {
+    right: -22px;
+}
+
+.wrapper .carousel {
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging img {
+    pointer-events: none;
+}
+
+.carousel img {
+    height: 340px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    width: calc(100% / 2);
+}
+
+.carousel img:first-child {
+    margin-left: 0px;
+}
+
+/* FAQ section styles */
+.faq {
+    width: 100%;
+    font-weight:100;
+    background: #151530;
+    color: #fbf8f8;
+    margin-right: 500px;
+    margin-top: -1px;
+}
+a{
+    text-decoration: none;
+}
+.navigation a :hover{
+    color:red;
+}
