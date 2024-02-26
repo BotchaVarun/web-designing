@@ -16,7 +16,7 @@ body {
 .start
 {
     
-        background:url(/img/Mainpage.jpg);
+        background:url(Mainpage.jpg);
         background-repeat: no-repeat;
         background-position: cover;
         background-size: 100% 100%;
@@ -143,7 +143,7 @@ body {
 
 /* Gallery styles */
 .gallery {
-    background:url(/img/gallery.jpg);
+    background:url(gallery.jpg);
     width:100%;
     margin-top:-20px;
     height:800px;
